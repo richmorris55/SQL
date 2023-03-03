@@ -33,7 +33,7 @@ using the products table and the categories table, return the product name and t
  ON s.productID = p.productID
  WHERE p.productID = 97;
 /* joins: find Product name, reviewer name, rating, and comment on the Visio TV. (only return for the lowest rating!) */
- SELECT p.Name, r.reviewer, r.ratingr.COMMENT 
+ SELECT p.Name, r.reviewer, r.rating, r.COMMENT 
   FROM products AS p
   INNER JOIN reviews AS r
   ON r.productID = p.ProductID
